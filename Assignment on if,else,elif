@@ -1,0 +1,329 @@
+#QUESTION ON IF ELSE ELIF
+Assignment 1: Online Shopping Discount System
+Assignment 2: Employee Bonus System
+Assignment 3: Banking System - Loan Eligibility
+Assignment 4: Restaurant Order Management System
+Assignment 5: Grade Calculator for Students
+Assignment 6: Traffic Light Simulation
+Assignment 7: Fitness App - BMI Calculator
+Assignment 8: Movie Ticket Booking System
+Assignment 9: Utility Bill Calculator
+
+#PROGRAMS:
+
+#Assignment1:
+'''
+from tkinter import*
+from tkinter import messagebox
+
+window=Tk()
+window.geometry("400x400")
+window.config(bg="white")
+window.title("Online Shopping Discount System")
+
+def card_value():
+    data=int(e1.get())
+    if(data>500):
+        messagebox.showinfo("STATUS","A 20% discount is applied")
+    elif(200<=data<=500):
+        messagebox.showinfo("STATUS","A 10% discount is applied")
+    elif(data<=200):
+        messagebox.showinfo("STATUS"," No discount is applied")
+
+
+#LABEL1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0, column=0)
+#entrybox
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="Enter",command=card_value)
+b1.grid(row=1,column=1)
+window.mainloop()
+'''
+
+
+#Assignment2:
+'''
+from tkinter import*
+from tkinter import messagebox
+
+window=Tk()
+window.geometry("400x400")
+window.config(bg="white")
+window.title("Employee Bonus System")
+
+def employee():
+    data=int(e1.get())
+    if(data>10):
+        messagebox.showinfo("STATUS","A 15% discount is applied")
+    elif(5<=data<=10):
+        messagebox.showinfo("STATUS","A 10% discount is applied")
+    elif(data<=5):
+        messagebox.showinfo("STATUS"," No discount is applied")
+
+
+#LABEL1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0, column=0)
+#entrybox
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="Enter",command=employee)
+b1.grid(row=1,column=1)
+window.mainloop()
+'''
+
+#Assignment3
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="red")
+window.title("loan_Eligibility")
+
+def check():
+    data=int(e1.get())
+    if(data>750):
+        messagebox.showinfo("STATUS","There are eligible for loan.")
+    elif(650<=data<=750):
+        messagebox.showinfo("STATUS","They are eligible for a loan with an increased interest rate.")
+    elif(employee<650):
+        messagebox.showinfo("STATUS","There is no loan.")
+
+
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=1,column=2)
+
+window.mainloop()
+'''
+
+
+#Assgnment4
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("Restaurant Order Management System")
+
+def check():
+    data=int(e1.get())
+    membership=int(e2.get())
+    if(data>100 and membership == 1):
+        messagebox.showinfo("STATUS","10% discount")
+    elif(data>100 and membership == 0):
+        messagebox.showinfo("STATUS","5% discount")
+    else:
+        messagebox.showinfo("STATUS","No discount")
+
+
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#label2
+l2=Label(window,text="membership",font=40)
+l2.grid(row=1,column=0)
+#e2
+e2=Entry(window)
+e2.grid(row=1,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=2,column=2)
+
+window.mainloop()
+'''
+
+#Assignment 5
+'''
+from tkinter import*
+from tkinter import messagebox
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("Grade Calculator for Students")
+
+def check():
+    data=int(e1.get())
+    if (data >= 90):
+        messagebox.showinfo("STATUS","GRADE A")
+    elif (80<=data<90):
+        messagebox.showinfo("STATUS","GRADE B")
+    elif (70<=data<80):
+        messagebox.showinfo("STATUS","GRADE C")
+    elif (60<=data<70):
+        messagebox.showinfo("STATUS","GRADE D")
+    else:
+        messagebox.showinfo("STATUS","FAIL")
+
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=1,column=1)
+
+window.mainloop()
+'''
+
+#Assignment 6
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("Traffic Light Simulation")
+
+def check():
+    data=str(e1.get())
+    if(data == Red):
+        messagebox.showinfo("STATUS","Stop")
+    elif(data == Yellow):
+        messagebox.showinfo("STATUS","Caution")
+    elif(data == Green):
+        messagebox.showinfo("STATUS","Go")
+
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=2,column=2)
+
+window.mainloop()
+'''
+
+
+#Assignment 7
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("BMI Calculator")
+
+def check():
+    data=float(e1.get())
+    if(data<18.5):
+        messagebox.showinfo("STATUS","Under Weight")
+    elif(18.5<=data<24.5):
+        messagebox.showinfo("STATUS","Normal Weight")
+    elif(25<=data<29.5):
+        messagebox.showinfo("STATUS","Over Weight")
+    elif (data>=30):
+        messagebox.showinfo("STATUS","Obesity")
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=2,column=2)
+
+window.mainloop()
+'''
+#Assignment 8
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("BMI Calculator")
+
+def check():
+    data=float(e1.get())
+    if (data<18):
+        messagebox.showinfo("STATUS","8 per ticket")
+    elif (18 <= data< 60):
+        messagebox.showinfo("STATUS","12 per ticket")
+    elif (data >= 60):
+        messagebox.showinfo("STATUS","10 per ticket")
+    else:
+        messagebox.showinfo("STATUS","There is no ticket")
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=2,column=2)
+
+window.mainloop()
+'''
+#Assignment9
+'''
+from tkinter import*
+from tkinter import messagebox
+
+
+window=Tk()
+window.geometry("500x400")
+window.config(bg="white")
+window.title("BMI Calculator")
+
+def check():
+    data=float(e1.get())
+    if (data< 100):
+        messagebox.showinfo("STATUS","The charge is $0.5 per unit.")
+    elif (100 <= data < 300):
+        messagebox.showinfo("STATUS","The charge is $0.75 per unit")
+    elif (data >= 300):
+        messagebox.showinfo("STATUS","The charge is $1 per unit")
+    else:
+        messagebox.showinfo("STATUS","No charge")
+
+#label1
+l1=Label(window,text="Data",font=40)
+l1.grid(row=0,column=0)
+#entrybox1
+e1=Entry(window)
+e1.grid(row=0,column=1)
+#button
+b1=Button(window,text="ENTER",command=check)
+b1.grid(row=2,column=2)
+
+window.mainloop()
+'''
