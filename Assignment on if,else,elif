@@ -203,11 +203,11 @@ window.title("Traffic Light Simulation")
 
 def check():
     data=str(e1.get())
-    if(data == Red):
+    if(data == "Red"):
         messagebox.showinfo("STATUS","Stop")
-    elif(data == Yellow):
+    elif(data == "Yellow"):
         messagebox.showinfo("STATUS","Caution")
-    elif(data == Green):
+    elif(data == "Green"):
         messagebox.showinfo("STATUS","Go")
 
 
